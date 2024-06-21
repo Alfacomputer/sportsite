@@ -1,0 +1,824 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input, li, .logo:hover{
+    cursor: pointer;
+}
+@font-face{
+    font-family: 'Sequel Sans Black Disp';
+    src:url(/fonts/Sequel\ Sans\ Black\ Disp.otf);
+}
+@font-face {
+    font-family: 'Sequel Sans Roman Disp';
+    src: url(/fonts/Sequel\ Sans\ Roman\ Disp.otf);
+}
+@font-face {
+    font-family: 'Sequel Sans Medium Disp';
+    src: url(/fonts/Sequel\ Sans\ Medium\ Disp.otf);
+}
+@font-face{
+    font-family: 'Sequel Sans Book Disp';
+    src: url(/fonts/Sequel\ Sans\ Book\ Disp.otf);
+}
+@font-face{
+    font-family: 'Sequel Sans Semi Bold Disp';
+    src: url(/fonts/Sequel\ Sans\ Semi\ Bold\ Disp.otf);
+}
+.wrapper{
+    width: 1440px;
+    min-height: 100vh;
+    background: #F9FAFC;
+    margin: 0 auto;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 135px;
+    background: #FFFFFF;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.list__item{
+    padding-right: 40px;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: #26262699;
+}
+.list__item:hover{
+    color: #262626;
+    font-weight: 700;
+}
+.list__item:nth-child(6){
+    padding: 0;
+}
+.nav__button{
+    background: #B8C2CE;
+    padding: 0 35px;
+    border-radius: 6px;
+    border: none;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+.header{
+    display: flex;
+    padding: 110px 0 0 135px;
+}
+.title{
+    max-width: 470px;
+    background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Sequel Sans Black Disp;
+    font-size: 80px;
+    font-weight: 435;
+    line-height: 75px;
+    text-transform: uppercase;
+    position: absolute;
+}
+.header__img{
+    position: relative;
+    max-width: 720px;
+    max-height: 580px;
+    top: -30px;
+    left: 148px;
+}
+.text__box{
+    position: relative;
+    max-width: 365px;
+    align-self: flex-end;
+    top: 20px;
+    left: -27%;
+}
+.header__text{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #262626;
+}
+.header__btn{
+    background: #262626;
+    padding: 12px 32px 12px 32px;
+    border-radius: 6px;
+    border: 0;
+    color: #E1E8F0;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.header__news--box{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 135px;
+}
+.blck{
+    padding: 4px 16px 4px 16px;
+    border-radius: 3px;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.04px;
+    color: #B8C2CE;
+    background: #E1E8F0;
+    max-width: 90px;
+}
+.header__news{
+    width: 270px;
+    height: 233px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom: 135px solid linear-gradient(360deg, #F2F2F2 35.23%, rgba(242, 242, 242, 0) 100%);
+}
+.first__header--news{
+    background-image: url(/img/firstnews.png);
+}
+.second__header--news{
+    background-image: url(/img/secondnews.png);
+}
+.first__header--news h4{
+    max-width: 200px;
+}
+.second__header--news h4{
+    max-width: 234px;
+}
+.header__news--subtitle{
+    font-family: DM Sans;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10.09px;
+    color: #26262699;
+    position: relative;
+    top: 95px;
+    left: 20px;
+    z-index: 20;
+}
+.header__news--text{
+    font-family: 'Sequel Sans Roman Disp';
+    font-size: 16px;
+    font-weight: 410;
+    line-height: 19.82px;
+    color: #262626;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    z-index: 20;
+}
+.opacity{
+    background: linear-gradient(360deg, #F2F2F2 35.23%, rgba(242, 242, 242, 0) 100%);
+    height: 112px;
+    position: relative;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 135px 0;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.section__title{
+    font-family: 'Sequel Sans Medium Disp';
+    font-size: 28px;
+    font-weight: 415;
+    line-height: 38px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+.category__box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-height: 440px;
+}
+.category__item{
+    max-width: 270px;
+    border-radius: 6px;
+    background: #EBEEF3;
+}
+.category__item span{
+    display: flex;
+    justify-content: center;
+    font-family: 'Sequel Sans Black Disp';
+    font-size: 37px;
+    font-weight: 435;
+    line-height: 39px;
+    text-align: center;
+    background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    width: 100% !important;
+}
+.category__img{
+    max-width: 270px;
+}
+.big{
+    height: 288px;
+}
+.borders{
+    padding: 45px 0;
+    background: #000;
+    border-radius: 6px;
+}
+.football, .car{
+    padding: 40px 10px;
+}
+.basket{
+    padding: 47px 40px;
+}
+.min{
+    padding: 18.3px 30px;
+}
+.trending__news{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background: #EBEEF3;
+    width: 100%;
+    border-radius: 6px;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 35px 35px;
+    width: 46%;
+    height: 100%;
+    gap: 20px;
+}
+.leftside h2{
+    margin: 0;
+}
+.leftside__box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 150px;
+}
+.left__side--img{
+    max-width: 234px;
+    height: 100%;
+}
+.left__side--subtitle{
+    font-family: DM Sans;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10.09px;
+    color: #26262699;
+    margin-top: 15px;
+}
+.left__side--title{
+    font-family: 'Sequel Sans Medium Disp';
+    font-size: 18px;
+    font-weight: 415;
+    line-height: 24.64px; 
+    color: #262626;
+    max-width: 245px;
+    margin: 5px 0 12px 0;
+}
+.left__side--text{
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.87px;
+    color: #696868;
+    max-width: 239px;
+}
+.withborder{
+    border-top: 1px solid #B8C2CE;
+}
+.rightside{
+    width: 48.5%;
+    background-image: url(/img/cyclistdrinkwater.png);
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rightside::after{
+    display: flex;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    border-radius: 6px;
+    width: 567px;
+    height: 613px;
+    top: 1464px;
+}
+.small__block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 19px;
+    border-radius: 3px;
+    border: 1px solid #EBEEF3;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.04px;
+    color: #EBEEF3;
+    max-width: 107px;
+    max-height: 36px;
+}
+.content__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 12;
+    padding: 30px 25px 35px 35px;
+    width: 100%;
+    height: 100%;
+}
+.rightside__subtitle{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18.16px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.rightside__title{
+    font-family: 'Sequel Sans Black Disp';
+    font-size: 36px;
+    font-weight: 435;
+    line-height: 42.48px;
+    color: #FFFFFF;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #EBEEF3;
+    margin-top: 80px;
+    border-radius: 6px;
+}
+.slider__img--box{
+    background-image: url(/img/sliderimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 518px;
+    border-radius: 6px;
+}
+.slider__img--box::after{
+    display: flex;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    border-radius: 6px;
+    width: 1170px;
+    height: 518px;
+    top: 2157px;
+    z-index: 1;
+}
+.slider__subtitle{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18.16px;
+    color: #F9FAFC;
+}
+.slider__title{
+    font-family: 'Sequel Sans Black Disp';
+    font-size: 36px;
+    font-weight: 435;
+    line-height: 43px;
+    color:  #F9FAFC;
+    max-width: 660px;
+    margin: 10px 0 20px;
+}
+.slider__text{
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #FFFFFF;
+    max-width: 700px;
+}
+.button__box{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    margin: 25px 25px 25px  0;
+    gap: 55px;
+}
+.button__list{
+    display: flex;
+    list-style: none;
+    gap: 55px;
+}
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 39px;
+    font-size: 36px;
+    color: white;
+    background: #BAB8B8;
+    border: none;
+    border-radius: 3px;
+    max-width: 50px;
+    max-height: 70px;
+}
+.arrows:hover{
+    background: #262626;
+}
+.button__item{
+    cursor: pointer;
+    font-family: 'Sequel Sans Book Disp';
+    font-size: 24px;
+    font-weight: 405;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #2626269C;
+}
+.button__item:hover{
+    background: #262626;
+    color: #EBEEF3;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+.section__box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 80px;
+}
+.recentnews{
+    width: 48.7%;
+}
+.recentnews__box{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.recentnews__content--box{
+    width: 47%;
+    height: 300px;
+}
+.recentnews__img--box{
+    background-image: url(/img/karate.png);
+    display: flex;
+    align-items: flex-end;
+    border-radius: 6px;
+}
+.recentnews__text--box{
+    padding: 15px 0 15px 15px;
+    backdrop-filter: blur(50px);
+    border-radius: 0 0 6px 6px;
+}
+.recentnews__img--box-subtitle{
+    font-family: DM Sans;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10.09px;
+    color: #EBEEF3;
+}
+.recentnews__img--box-title{
+    font-family: 'Sequel Sans Roman Disp';
+    font-size: 16px;
+    font-weight: 410;
+    line-height: 19.82px;
+    color: #EBEEF3;
+    margin-top: 5px;
+}
+.recentnews__news--box{
+    background: #EBEEF3;
+    border-radius: 6px;
+    padding: 14px 0 17px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.small__newsbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 70px ;
+}
+.small__newsbox--img{
+    max-width: 70px;
+}
+.small__newsbox--subtitle{
+    font-family: DM Sans;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10.09px;
+    color: #26262699;
+    margin: 10px 0 5px 12px;
+}
+.small__newsbox--title{
+    font-family: 'Sequel Sans Roman Disp';
+    font-size: 16px;
+    font-weight: 410;
+    line-height: 19.82px;
+    color: #262626;
+    max-width: 160px;
+    margin: 0 0 0 12px;
+}
+.recent__news--box-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B8C2CE;
+    max-width: 80px;
+    max-height: 28px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 3px;
+    border: none;
+    color: #FFFFFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+}
+.clubsranking{
+    width: 48.7%;
+}
+.clubsranking__box{
+    width: 100%;
+    height: 300px;
+    background: #EBEEF3;
+    border-radius: 6px;
+    padding: 20px 23px 20px 30px;
+    display: grid;
+    grid-template-columns: 10px 24px 150px repeat(7, 20px);
+    grid-template-rows: repeat(7, 1fr);
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+    row-gap: 10px;
+}
+.clubsranking__title{
+    grid-column: 1/ span 2;
+    font-family: 'Sequel Sans Semi Bold Disp';
+    font-size: 16px;
+    font-weight: 420;
+    line-height: 18.88px;
+    color: #262626;
+}
+.clubsranking__box p{
+    font-family: 'Sequel Sans Book Disp';
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 18.88px;
+    color: #262626;
+    text-align: center;
+}
+.gp{
+    grid-column: 4;
+}
+.sec{
+    grid-row: 3;
+}
+.third{
+    grid-row: 4;
+}
+.fourth{
+    grid-row: 5;
+}
+.fiveth{
+    grid-row: 6;
+}
+.sixth{
+    grid-row: 7;
+}
+.seclogo{
+    grid-row: 3;
+}
+.thirdlogo{
+    grid-row: 4;
+}
+.fourthlogo{
+    grid-row: 5;
+}
+.fivethlogo{
+    grid-row: 6;
+}
+.sixthlogo{
+    grid-row: 7;
+}
+.firstclubname,.secclubname,.thirdclubname,.fourthclubname,.fivethclubname,.sixthclubname{
+    justify-self: flex-start;
+}
+.secclubname{
+    grid-row: 3;
+}
+.thirdclubname{
+    grid-row: 4;
+}
+.fourthclubname{
+    grid-row: 5;
+}
+.fivethclubname{
+    grid-row: 6;
+}
+.sixthclubname{
+    grid-row: 7;
+}
+.number{
+    font-family: 'Sequel Sans Book Disp';
+    font-size: 16px;
+    font-weight: 405;
+    line-height: 18.88px;
+    color: #262626;
+}
+.sportsarticle{
+    width: 100%;
+    margin-top: 72px;
+}
+.sportsarticle__box{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.sportsarticle__content--box{
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 505px;
+    gap: 20px;
+}
+.img__box--first{
+    background-image: url(/img/basketballimg.png);
+    height: 248px;
+}
+.img__box--second{
+    background-image: url(/img/hockey.png);
+}
+.img__box--third{
+    background-image: url(/img/badminton.png);
+}
+.img__box{
+    padding: 14px;
+    height: 248px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.small__img--block{
+    border: 0.75px solid #EBEEF3;
+    padding: 6px 10px 6px 10px;
+    border-radius: 4px;
+    max-width: 76px;
+    max-height: 28px;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.62px;
+    color: #EBEEF3;
+}
+.avatar__box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.avatar__name{
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+.sportsaricle__subtitle{
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14.13px;
+    color: #26262699;
+}
+.sportsarticle__title{
+    font-family: 'Sequel Sans Medium Disp';
+    font-size: 22px;
+    font-weight: 415;
+    line-height: 29px;
+    color: #262626;
+}
+.sportsarticle__text{
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.82px;
+    color: #696868;
+}
+.arrow__box{
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+}
+.newssubscription{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #EBEEF3;
+    height: 385px;
+    margin-top: 82px;
+    border-radius: 6px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 83px 0 80px 68px;
+    height: 100%;
+}
+.form__title{
+    max-width: 614px;
+    position: inherit;
+    margin-bottom: 44px;
+    font-size: 60px;
+}
+#footer__email{
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #262626;
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 24px;
+    width: 435px;
+    font-family: DM Sans;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #2626265E;
+    background: none;
+}
+.input__box{
+    display: flex;
+}
+.footer__email--send{
+    width: 74px;
+    height: 61px;
+    border-radius: 0px 6px 6px 0px;
+    background: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px 5px 0;
+}
+.rotate{
+    transform: rotate(-45deg);
+    color: #EBEEF3;
+    font-size: 32px;
+    font-family: DM Sans;
+}
+.social{
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.socblock{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #262626;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.socblock img{
+    width: max-content;
+    height: max-content
+}
+.footer__button--box{
+    margin: 0;
+}
+.bloooock{
+    display: flex;
+    gap: 25px;
+}
